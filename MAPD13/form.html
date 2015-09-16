@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<title>表單元素</title>
+		<meta charset="utf-8">
+		<style>
+		fieldset {
+			width:500px;
+			margin:15px;
+			border:1px solid #acd6ff;
+			border-radius:10px;
+		}
+		em {color:red;}
+			.st1 {
+				width:450px;
+				margin:20px;
+				border-bottom:1px solid #f0f0f0;
+				padding-bottom:10px;
+			}
+			.submit {
+				width:450px;
+				margin:20px;
+				text-align:center;
+			}
+			.title {
+				width:100px;
+				float:left;
+				text-align:right;
+				padding-right:3px;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>個人資料一<em>(必填)</em></legend>
+			<div class="st1">
+				<label class="title">姓名:</label><input type="text" name="account" required maxlength="6" size="10" autocomplete="off" autofocus placeholder="guest">
+			</div>
+			<div class="st1">
+				<label class="title">密碼:</label><input type="password" name="pwd" size="10" required>
+			</div>
+			<div class="st1">
+				<label class="title">性別:</label>
+				<input type="radio" name="gender" value="male">男
+				<input type="radio" name="gender" value="female">女
+			</div>
+			<div class="st1">
+				<label class="title">身分證字號:</label>
+				<input type="text" name="id" size="10" pattern="[a-zA-Z]{1}[1-2]{1}\d{8}">
+			</div>
+			<div class="st1">
+				<label class="title">E-mail:</label>
+				<input type="email" name="mail1">
+			</div>
+			</fieldset>
+			<fieldset>
+				<legend>地址<em>(必填)</em></legend>
+				<div class="st1">
+					<label class="title">縣市:</label>
+					<select name="add1">
+						<option value="1">台北市</option>
+						<option value="2">新北市</option>
+						<option value="3">桃園市</option>
+						<option value="4">新竹市</option>
+					</select>
+				</div>
+				<div class="st1">
+					<label class="title">完整地址:</label>
+					<input type="text" name="add2" size="30">
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>個人資料二</legend>
+				<div class="st1">
+					<label class="title">興趣:</label>
+					<input type="checkbox" name="music" value="1">音樂
+					<input type="checkbox" name="sport" value="2">運動
+					<input type="checkbox" name="reading" value="3">閱讀
+					<input type="checkbox" name="movie" value="4">電影
+				</div>
+				<div class="st1">
+					<label class="title">Blog:</label>
+					<input type="url" name="url1">
+				</div>
+				<div class="st1">
+					<label class="title">照片:</label>
+					<input type="file" name="file1" multiple>
+				</div>
+				<div class="st1">
+					<label class="title">Blog:</label>
+					<input type="url" name="url1" list="hplist">
+					<datalist id="hplist">
+						<option value="http://www.google.com">
+						<option value="http://www.facebook.com">					</datalist>
+				</div>
+			<div class="st1">
+				<label class="title">意見:</label><textarea cols="40" rows="5"></textarea>
+			</div>
+			</fieldset>
+			<div class="submit">
+				<input type="submit" value="送出">
+				<input type="reset" value="清除">
+			</div>
+		</form>
+		<hr>
+		<form action="#" method="get">
+			<div class="st1">
+				<label class="title">Date:</label>
+				<input type="date" name="date1">
+			</div>
+			<div class="st1">
+				<label class="title">Month:</label>
+				<input type="month" name="month1">
+			</div>
+			<div class="st1">
+				<label class="title">Week:</label>
+				<input type="week" name="week1">
+			</div>
+			<div class="st1">
+				<label class="title">Color:</label>
+				<input type="color" name="color1">
+			</div>
+			<div class="st1">
+				<label class="title">Number:</label>
+				<input type="number" name="nub1" min="0" max="20" step="2">
+			</div>
+		</form>
+	</body>
+</html>

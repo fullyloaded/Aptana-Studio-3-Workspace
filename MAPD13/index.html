@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<title>橫式導覽列</title>
+		<meta charset="utf-8">
+		<style>
+		* {margin:0;padding:0;}
+		
+			#menu {
+				overflow:auto !important;
+			overflow /**/:hidden;
+				width:1000px;
+				margin:0 auto;
+				background-color:#66b3ff;
+				border-bottom:3px solid #cccccc;
+				border-top-right-radius:15px;
+				border-top-left-radius:15px;
+			}
+			#menu li {
+				float:left;
+				list-style-type:none;
+				width:7em;
+				border-right:1px solid #cccccc;
+				
+			}
+			#menu li:nth-child(1){
+				margin-left:70px;
+			}
+			#menu li a {
+				display:block;
+				width:100%;
+				line-height:2.5em;
+				color:#333333;
+				text-decoration:none;
+				text-align:center;
+			}
+			#menu li a:hover {
+				color:#FFFFFF;
+				background-color:#0080ff;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="allpage">
+		<ul id="menu">
+			<li><a href="">回首頁</a></li>
+			<li><a href="">解決方案</a></li>
+			<li><a href="">實績介紹</a></li>
+			<li><a href="">合作夥伴</a></li>
+			<li><a href="">主要客戶</a></li>
+			<li><a href="">公司簡介</a></li>
+			<li><a href="">聯絡我們</a></li>
+		</ul>
+		</div>
+	</body>
+</html>

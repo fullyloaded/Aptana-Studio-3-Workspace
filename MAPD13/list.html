@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<meta charset="utf-8">
+		<title>清單元素</title>
+		<style>
+			#menu li {
+				list-style-type:none;
+				list-style-image:url('images/arrow1.jpg')
+			}
+			#menu1 li {
+				list-style-type:none;
+				list-style-image:url('images/arrow2.gif')
+			}
+			#menu2 li {
+				list-style-type:none;
+				list-style-image:url('images/arrow3.png')
+			}
+			#in {
+				background-color:yellow;
+				list-style-position:inside;
+			}
+			#out {
+			background-color:yellow;
+			list-style-position:outside;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="menu">
+			<li>唐詩</li>
+			<li>宋詞
+				<ul id="menu1">
+					<li>歐陽修</li>
+					<li>李清照
+						<ol id="menu2">
+							<li id="in">如夢令</li>
+							<li>菩薩蠻</li>
+							<li id="out">一翦梅</li>
+						</ol>
+					</li>
+				</ul>
+			</li>
+			<li>元曲</li>
+		</ul>
+		<ol>
+			<li>新聞</li>
+			<li>運動</li>
+			<li>影視</li>
+		</ol>
+		<h2>台灣黑熊</h2>
+		<dl>
+			<dt>俗名:</dt>
+			<dd>狗熊,白喉熊</dd>
+			<dt>分類:</dt>
+			<dd>食肉目,熊科</dd>
+			<dt>分布:</dt>
+			<dd>全島海拔一千~三千五百公尺森林地帶均有分布</dd>
+		</dl>
+	</body>
+</html>

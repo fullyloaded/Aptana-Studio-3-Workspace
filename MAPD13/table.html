@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<title>表格練習</title>
+		<meta charset="utf-8">
+		<style>
+			table {
+				margin:0 auto;
+				border:3px solid  #005AB5;
+				width:400px;
+				border-collapse:collapse;
+			}
+			td,th {
+				border:1px solid gray;
+			}
+			thead {
+				border-bottom:5px double #009393;
+				background-color: #00AEAE;
+				text-transform:uppercase;
+			}
+			tbody {
+				background-color: #97CBFF;
+				text-align:center;
+			}
+			tbody tr:nth-child(2n) {
+				background-color: #80FFFF;
+			}
+			tbody tr:nth-child(2n+1) {
+				background-color: #66B3FF;
+			}
+			tbody tr:hover {
+				background-color:#ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption><h3>表格練習</h3></caption>
+			<thead>
+				<tr>
+					<th>a</th>
+					<th>b</th>
+					<th>c</th>
+					<th>d</th>
+				</tr>
+				<tr>
+					<th colspan="2">a</th>
+					
+					<th colspan="2">c</th>
+					
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td colspan="3">2</td>
+					
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td rowspan="3">4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
